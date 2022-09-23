@@ -1,0 +1,240 @@
+.box {
+    width: 1500px;
+    margin: auto;
+    position: relative;
+} 
+
+.boxcard {
+    position: absolute;
+    width: 1470px;
+    left: 215px;
+    z-index: 1;
+} 
+.box2 {
+    top: 380px; 
+}
+
+.electronics, .light, .watch {
+    margin-top: 23px;
+}
+
+.books, .pc {
+    width: 1466px;
+    height: 280px;
+    margin-top: 20px;
+    background-color: white;
+    margin-left: 3px;
+}
+
+.categorydiv {
+    height: 125px;
+    position: relative;            
+}
+.colordiv {
+    background-color: #F2FAFB; 
+    position: absolute;   
+    width: 160px;         
+    height: 123px;
+    padding: 12px;
+}
+.baby {            
+    left: 25px;
+} 
+.rightcard {
+    left: 2px;
+}
+
+.dress-box {
+    width: 90%; 
+    margin: auto;
+}
+
+.signin-box {
+    margin: auto; 
+} 
+
+.signinbtn {
+    width: 300px;
+    background-color: #F7CA00;
+    border: none;
+    color: #000;
+} 
+
+.signin-box .signinbtn:hover {
+    background-color: #F7CA00;
+    color: #000;
+}
+
+.shipimg {
+    margin-top: 30px;
+    margin-left: 4%;
+    height: 270px;
+    width: auto;
+}
+
+.dealbtn {
+    margin-top: 15px;
+}
+
+.rowbox2 {
+    top: 1585px; 
+}
+.row3 {
+    top: 750px;
+}
+
+.fluid-box {
+    background-color: white;
+    margin-top: 2075px;  
+}
+
+.rating a {
+    text-decoration: none;
+    color: rgb(6, 124, 124);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.rating a:hover {
+    color: rgb(206, 70, 70);
+}
+
+.itemsmall {
+    font-size: 13px;
+}
+
+.itemp {
+    margin: 0;
+    font-weight: 500;
+    position: relative;
+}
+
+.itemdollar {
+    font-size: 11px;
+    position: absolute;
+    top: 3px;  
+}
+
+.itemspan {
+    margin-left: 6px;
+}
+
+.lastcallsignin .btn-sm {
+    width: 250px;
+    font-weight: 600;
+}
+
+.lastcallsignin span {
+    font-size: 14px;
+}
+
+.lastcallsignin small {
+    font-size: 12px;
+}
+
+.backtotop {
+    background-color: #485769; 
+    color: #F2FAFB;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer1 {
+    background-color: #232F3E;
+}
+
+.container-footer {
+    width: 1000px; 
+    margin: auto;
+}
+
+.container-footer a, .footer3-box a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 14px;    
+} 
+
+.footer1_line_height a {
+    line-height: 2;
+}
+
+.container-footer a:hover, .footer3-box a:hover {
+    text-decoration: underline;
+    cursor: pointer;    
+}
+
+.footer2 {
+    text-align: center;
+}
+
+.footer2 .amazon {
+    margin-right: 80px;
+}
+.footer2 span {
+    border: 1px solid #d0d1d177;
+    margin: 4px;
+    border-radius: 6%;  
+    padding: 5px;
+    font-size: 14px;
+    color: #bcd1d1fb;
+}
+
+#span1 {
+    padding: 5px 26px;
+    position: relative;
+}
+
+#span3 {
+    padding: 5px 10px;    
+}
+
+#span1 .fa-caret-up, .fa-caret-down {
+    font-size: 8px;
+    position: absolute;
+}
+
+.fa-caret-up {
+    left: 100px;
+    top: 8px;
+} 
+
+
+.fa-caret-down {
+    left: 100px;
+    top: 12px;
+} 
+
+.footer3 {
+    background-color: #131A22;
+    line-height: 1;
+} 
+
+.footer3-box {
+    width: 1040px; 
+    margin: auto; 
+}
+.footer3 .col {
+    padding: 5px 30px;
+    line-height: 1;
+}
+
+.footer3 a {
+    font-size: 11px;
+    color: #ccc;
+}
+ 
+.footer3 strong {
+    font-size: 11px;
+    color: #ddd;
+}
+
+
+
+footer, footer a {
+    font-size: 12px !important;
+    color: rgb(209, 209, 209) !important;
+}
+
+footer a {
+    padding-right: 10px;
+}

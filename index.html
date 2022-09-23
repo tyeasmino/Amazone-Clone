@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amazon UI by Tamima</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/nav2.css" />
+    <link rel="stylesheet" href="css/row1_card.css">
+    <style>
+        body {
+            background-color: #EAEDED;
+        }
+    </style>
+</head>
+
+<body> 
+    <!-- Main Navbar Starts Here -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#"><img src="assects/amazon_PNG25.png" alt="" width="100" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light lh-1" aria-current="page" href="#">
+                            <small class="px-3 deliver">Deliver to</small> <br />
+                            <i class="fas fa-duotone fa-location-dot"></i>
+                            <strong>Bangladesh</strong>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <nav class="navbar bg-dark">
+                            <form class="container-fluid">
+                                <div class="input-group"> 
+                                    <div class="dropdown"> 
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            All
+                                        </button>
+                                        <ul class="dropdown-menu"> 
+                                            <li>
+                                                <a class="dropdown-item" href="#">All Department</a> 
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Beauty &amp; Personal Care</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Books</a></li> 
+                                            <li>
+                                                <a class="dropdown-item" href="#">Boys' Fashion</a> 
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Computers</a></li> 
+                                            <li><a class="dropdown-item" href="#">Deals</a></li> 
+                                            <li>
+                                                <a class="dropdown-item" href="#">Digital Music</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Electronics</a>
+                                            </li> 
+                                            <li>
+                                                <a class="dropdown-item" href="#">Girls' Fashion</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <input type="text" class="form-control" size="145" />
+                                    <i class="fas fa-duotone fa-search text-dark px-3 py-2" id="search"></i>
+                                </div>
+                            </form>
+                        </nav>
+                    </li>
+
+                    <li id="languageIMG" class="nav-item text-center lh-1 dropdown">
+                        <div class="btn dropdown-toggle text-light lh-1" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <br />
+                            <img src="assects/eng.png" alt="" width="22" />
+                        </div>
+                        <ul id="languageUL" class="dropdown-menu lang">
+                            Change Language
+                            <small><a class="linking" href="#">Learn more</a></small>
+
+                            <li class="mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" checked />
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        English
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        español - ES - Traducción
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        العربية - AR - الترجمة
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Deutsch - DE - Übersetzung
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        עברית - HE - תרגום
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        português - PT - Tradução
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        한국어 - KO - 번역
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" />
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        中文 (简体) - ZH - 翻译
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" />
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        中文 (繁體) - ZH - 翻譯
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                Change Currency
+                                <small><a class="linking" href="#">Learn more</a></small>
+                                <br />
+                                $ - USD - US Dollar
+                                <small><a href="#" class="linking change">Change</a></small>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <img src="assects/eng.png" width="20" alt="" /> You are
+                                shoping on Amazon.com <br />
+                                <br />
+                                <a href="#" class="linking">Change country/region. </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li id="accoungLI" class="nav-item text-center lh-1 dropdown">
+                        <a class="nav-link text-light" href="#">
+                            <small> Hello, Sign in</small> <br />
+                            <strong> Account & Lists <i class="fas fa-sharp fa-solid fa-sort-down fa-xs"></i></strong>
+                        </a>
+
+                        <ul id="accountUL" class="dropdown-menu lang">
+                            <div class="text-center">
+                                <button class="btn btn-warning btn-sign">Sign in</button> <br>
+                                New Customer <small><a href="#" class="linking">Start here</a></small>
+                                <hr>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 lh-lg">
+                                    <strong>Your Lists</strong> <br>
+                                    <a class="a_list" href="#">Create a List</a> <br>
+                                    <a class="a_list" href="#">Find a List or Registry</a> <br>
+                                    <a class="a_list" href="#">AmazonSmile Charity Lists</a> <br>
+                                </div>
+                                <!-- <div class="vl"></div> -->
+                                <div class="col-6 lh-lg column2">
+                                    <strong>Your Account</strong> <br>
+                                    <a class="a_list" href="#">Account</a> <br>
+                                    <a class="a_list" href="#">Orders</a> <br>
+                                    <a class="a_list" href="#">Recommendations</a> <br>
+                                    <a class="a_list" href="#">Browsing History</a> <br>
+                                    <a class="a_list" href="#">Watchlist</a> <br>
+                                    <a class="a_list" href="#">Video Purchases & Rentals</a> <br>
+                                    <a class="a_list" href="#">Kindle Unlimited</a> <br>
+                                    <a class="a_list" href="#">Content & Devices</a> <br>
+                                    <a class="a_list" href="#">Subscribe & Save Items</a> <br>
+                                    <a class="a_list" href="#">Memberships & Subscriptions</a> <br>
+                                    <a class="a_list" href="#">Music Library</a> <br>
+                                </div>
+                            </div>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item lh-1">
+                        <a class="nav-link text-light">
+                            <small> Retunrs </small> <br />
+                            <strong> & Orders </strong>
+                        </a>
+                    </li>
+
+                    <li class="nav-item lh-1 nav-cart">
+                        <a class="nav-link text-light mt-2" id="cart">
+                            <i class="fas fa-thin fa-cart-shopping fa-2xl"></i>
+                            <small id="cart-text"> 0</small> <strong> Cart</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Navbar Ends Here -->
+
+    <!-- Second Navbar Starts Here --> 
+    <div class="nav2">
+        <ul class="nav nav2ul">
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fas fa-sharp fa-solid fa-bars"></i> All</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Today's Deal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Customer Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Registry</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Gift Cards</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Sell</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Second Navbar Ends Here -->
+
+    <!-- Slider /Carosal Starts Here -->
+    <div class="box">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assects/slider1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assects/slider2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assects/slider3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assects/slider4.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Slider /Carosal Ends Here -->
+
+    
+
+    <!-- Cards starts Here -->
+    <div class="boxcard box2">
+        <div class="row">
+            <!-- Gaming accessories  -->
+            <div class="col">
+                <div class="card">
+                    <h5 class="p-3">Gaming accessories</h5>
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <img src="assects/game/headset.jpg" alt="headset" width="100%"> <br>
+                            <small>Headsets</small>
+                        </div>
+                        <div class="col-6 text-center">
+                            <img src="assects/game/keyboard.jpg" alt="keyboard" width="100%"> <br>
+                            <small>Keyboards</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <img src="assects/game/mice.jpg" alt="mice" width="100%"> <br>
+                            <small>Computer mice</small>
+                        </div>
+                        <div class="col-6 text-center">
+                            <img src="assects/game/chair.jpg" alt="chair" width="100%"> <br>
+                            <small>Chairs</small>
+                        </div>
+                    </div> <br> <br>
+                    <a class="linking p-2" href="#">See more</a> <br>
+                </div>
+            </div>
+
+            <!-- Shop by Category  -->
+            <div class="col">
+                <div class="card">
+                    <h5 class="p-3">Shop by Category</h5>
+                    <div class="row">
+                        <div class="col-6 text-center categorydiv">
+                            <div class="colordiv baby">
+                                <img src="assects/category/laptop.jpg" alt="laptop" width="120px"> <br>
+                                <small style="font-size: 12px;">Computer & Accessories</small>
+                            </div>
+                        </div>
+                        <div class="col-6 text-center categorydiv">
+                            <div class="colordiv rightcard">
+                                <img src="assects/category/game.jpg" alt="video game" width="85px"> <br>
+                                <small>Video Game</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 text-center categorydiv">
+                            <div class="colordiv baby">
+                                <img src="assects/category/baby-removebg-preview.png" alt="baby" width="85px"> <br>
+                                <small>Baby</small>
+                            </div>
+                        </div>
+                        <div class="col-6 text-center categorydiv">
+                            <div class="colordiv rightcard">
+                                <img src="assects/category/toy-removebg-preview.png" alt="toy" width="85px"> <br>
+                                <small>Toys & Games</small>
+                            </div>
+                        </div>
+                    </div> <br> <br>
+                    <a class="linking p-2" href="#">Shop now</a> <br>
+                </div>
+            </div>
+
+            <!-- Dress  -->
+            <div class="col">
+                <div class="card">
+                    <h5 class="p-3">Dresses</h5>
+                    <div class="dress-box">
+                        <img src="assects/dress.jpg" alt="Dresses" width="100%" height="290px"> <br> <br>
+                        <a class="linking p-2" href="#">Shop now</a> 
+                    </div><br>
+                </div>
+            </div>
+
+            <!-- Sign in  -->
+            <div class="col">
+                <div class="card">
+                    <h5 class="p-3">Sign in for the best experience</h5>
+                    <div class="signin-box">
+                        <button class="btn btn-secondary signinbtn">Sign in securely</button> <br> <br>
+                    </div>
+                </div>
+                <img src="assects/ship.jpg" class="shipimg" alt="Ship">
+            </div>
+        </div>
+
+        <div class="row electronics">
+            <!-- Electrolics  -->
+            <div class="col">
+                <div class="card">
+                    <h5 class="p-3">Electrolics</h5>
+                    <div class="dress-box">
+                        <img src="assects/electronics.jpg" alt="Electrolics" width="100%" height="290px"> <br> <br>
+                        <a class="linking p-2" href="#">See more</a> 
+                    </div>
+                    <br> 
+                </div>
+            </div>
+
+            <!-- Health & Personal Care  -->
+            <div class="col">
+                <div class="card">
+                    <h5 class="p-3">Health & Personal Care</h5>
+                    <div class="dress-box">
+                        <img src="assects/health.jpg" alt="Health & Personal Care" width="100%" height="290px"> <br> <br>
+                        <a class="linking p-2" href="#">Shop now</a> 
+                    </div> <br> 
+                </div>
+            </div>
+
+            <!-- Top Deal -->
+            <div class="col">
+                <div class="card">
+                    <h5 class="p-3">Top Deal</h5>
+                    <div class="dress-box"> 
+                        <img src="assects/deal.jpg" alt="Top Deal" width="100%" height="220px">  <br>
+                        <div class="dealbtn">
+                            <button class="btn btn-danger btn-sm">$4.99 and under</button>   
+                            <small class="text-danger "><strong>Top deal</strong></small> <br>
+                            <small>Today only: Bestsellers of 2022 so far on Kindle</small>
+                        </div> 
+                         <br> 
+                        <a class="linking p-2" href="#">See all deals</a>
+                    </div> <br>
+
+                </div>
+            </div>
+
+            <!-- Easy returns -->
+            <div class="col">
+                <div class="card">
+                    <h5 class="p-3">Easy returns</h5>
+                    <div class="dress-box">
+                        <img src="assects/return.jpg" alt="Easy returns" width="100%" height="290px"> <br> <br>
+                        <a class="linking p-2" href="#">Learn more</a> 
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row books">
+            <h5 class="p-3">Top Sellers in Books for you</h5>
+            <div id="carouselExampleFade1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assects/top sells/1.jpg" alt="" height="190px" width="13%" class="m-1">
+                        <img src="assects/top sells/2.jpg" alt="" height="190px" width="13%" class="m-1">
+                        <img src="assects/top sells/3.jpg" alt="" height="190px" width="13%" class="m-1">
+                        <img src="assects/top sells/4.jpg" alt="" height="190px" width="13%" class="m-1">
+                        <img src="assects/top sells/5.jpg" alt="" height="190px" width="13%" class="m-1">
+                        <img src="assects/top sells/6.jpg" alt="" height="190px" width="13%" class="m-1">
+                        <img src="assects/top sells/7.jpg" alt="" height="190px" width="13%" class="m-1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assects/top sells/8.jpg" alt="" height="190px" width="13%" class="m-1">
+                        <img src="assects/top sells/9.jpg" alt="" height="190px" width="13%" class="m-1">
+                        <img src="assects/top sells/10.jpg" alt="" height="190px" width="13%" class="m-1">
+                        <img src="assects/top sells/11.jpg" alt="" height="190px" width="13%" class="m-1">
+                        <img src="assects/top sells/12.jpg" alt="" height="190px" width="13%" class="m-1">
+                        <img src="assects/top sells/13.jpg" alt="" height="190px" width="13%" class="m-1">
+                        <img src="assects/top sells/14.jpg" alt="" height="190px" width="13%" class="m-1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assects/top sells/15.jpg" alt="" height="190px" class="m-1">
+                        <img src="assects/top sells/16.jpg" alt="" height="190px" class="m-1">
+                        <img src="assects/top sells/17.jpg" alt="" height="190px" class="m-1">                    
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="row pc">
+            <h5 class="p-3">Popular products in PC internationally</h5>
+            <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assects/pc/1.jpg" alt="" height="180px" width="13%" class="m-1">
+                        <img src="assects/pc/2.jpg" alt="" height="180px" width="13%" class="m-1">
+                        <img src="assects/pc/3.jpg" alt="" height="180px" width="13%" class="m-1">
+                        <img src="assects/pc/4.jpg" alt="" height="180px" width="13%" class="m-1">
+                        <img src="assects/pc/5.jpg" alt="" height="180px" width="13%" class="m-1">
+                        <img src="assects/pc/6.jpg" alt="" height="180px" width="13%" class="m-1">
+                        <img src="assects/pc/7.jpg" alt="" height="180px" width="13%" class="m-1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assects/pc/8.jpg" alt="" height="180px" width="13%" class="m-1">
+                        <img src="assects/pc/9.jpg" alt="" height="180px" width="13%" class="m-1">
+                        <img src="assects/pc/10.jpg" alt="" height="180px" width="13%" class="m-1">
+                        <img src="assects/pc/11.jpg" alt="" height="180px" width="13%" class="m-1">
+                    </div>                
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="row light">
+            <!-- Create with strip lights -->
+            <div class="col">
+                <div class="card">
+                    <h5 class="p-3">Create with strip lights</h5> 
+                    <div class="dress-box"> 
+                        <img src="assects/3rd row/light.jpg" alt="Lights" width="100%" height="290px"> <br> <br>
+                        <a class="linking p-2" href="#">Shop now</a> 
+                    </div>
+                    <br> 
+                </div>
+            </div>
+
+            <!-- Shop Laptops & Tablets -->
+            <div class="col">
+                <div class="card">
+                    <h5 class="p-3">Shop Laptops & Tablets</h5>
+                    <div class="dress-box">
+                        <img src="assects/3rd row/laptop.jpg" alt="Laptops" width="100%" height="290px"> <br> <br>
+                        <a class="linking p-2" href="#">See more</a> 
+                    </div> <br> 
+                </div>
+            </div>
+
+            <!-- For your Fitness Needs -->
+            <div class="col"> 
+                <div class="card">
+                    <h5 class="p-3">For your Fitness Needs</h5>
+                    <div class="dress-box"> 
+                        <img src="assects/3rd row/fitness.jpg" alt="For your Fitness Needs" width="100%" height="290px">  <br> <br> 
+                        <a class="linking p-2" href="#">Shop now</a>
+                    </div> <br>
+                </div>
+            </div>
+
+            <!-- New arrivals in Toys -->
+            <div class="col">
+                <div class="card">
+                    <h5 class="p-3">New arrivals in Toys</h5>
+                    <div class="dress-box">
+                        <img src="assects/3rd row/toy.jpg" alt="New arrivals in Toys" width="100%" height="290px"> <br> <br>
+                        <a class="linking p-2" href="#">Shop now</a> 
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row watch">
+            <!-- Shop activity trackers and smartwatches -->
+            <div class="col">
+                <div class="card">
+                    <h5 class="p-3">Shop activity trackers and smartwatches</h5> 
+                    <div class="dress-box"> 
+                        <img src="assects/4th row/1.jpg" alt="smartwatches" width="100%" height="266px"> <br> <br>
+                        <a class="linking p-2" href="#">Shop now</a> 
+                    </div>
+                    <br> 
+                </div>
+            </div>
+
+            <!-- Gaming merchandise -->
+            <div class="col">
+                <div class="card">
+                    <h5 class="p-3">Gaming merchandise</h5>
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <img src="assects/4th row/shirt.jpg" alt="shirt" width="100%"> <br>
+                            <small>Apparel</small> 
+                        </div>
+                        <div class="col-6 text-center">
+                            <img src="assects/4th row/cap.jpg" alt="hats" width="100%"> <br>
+                            <small>Hats</small> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <img src="assects/4th row/man.jpg" alt="man" width="100%"> <br>
+                            <small>Action figures</small>
+                        </div>
+                        <div class="col-6 text-center">
+                            <img src="assects/4th row/mug.jpg" alt="mug" width="100%"> <br>
+                            <small>Mugs</small>
+                        </div> 
+                    </div> <br> <br>
+                    <a class="linking p-2" href="#">See more</a> <br>
+                </div>
+            </div>
+
+            <!-- Shop pet supplies -->
+            <div class="col"> 
+                <div class="card"> 
+                    <h5 class="p-3">Shop Pet supplies</h5>
+                    <div class="dress-box">
+                        <img src="assects/4th row/2.jpg" alt="Dresses" width="100%" height="290px"> <br> <br>
+                        <a class="linking p-2" href="#">See More</a> 
+                    </div><br>
+                </div>
+            </div> 
+
+            <!-- Sign in --> 
+            <div class="col"> 
+                <div class="card">  
+                    <h5 class="p-3">Kindle E readers</h5>
+                    <div class="dress-box">
+                        <img src="assects/4th row/3.jpg" alt="Dresses" width="100%" height="290px"> <br> <br>
+                        <a class="linking p-2" href="#">Shop now</a> 
+                    </div><br>
+                </div>
+            </div> 
+        </div>    
+    </div>
+    <!-- Cards stops Here -->   
+
+    <div class="container-fluid fluid-box">
+        <br> <hr>
+        <h5 class="px-4">Customers who viewed items in your browsing history also viewed</h5>
+            
+        <div class="row px-4 rating lh-sm">
+            <div class="col">
+                <img src="assects/rating items/1.jpg" alt=""> <br>
+                <a href="#"> Dell 90W AC Adapter for Dell Latitude E6430 ATG, Dell Latitude E6430s, Dell Latitude E6440, Dell Latitude E6530, Dell... </a>
+                <div class="star linking"><img src="assects/rating items/5star.jpg" alt="">221</div>
+                <p class="itemp"><small class="itemdollar">$</small> <span class="itemspan">29.99 </span></p>
+                <small class="itemsmall">$28.06 shipping <br>Only 1 left in stock - order...</small>
+            </div>
+            <div class="col">
+                <img src="assects/rating items/3.jpg" alt=""> <br>
+                <a href="#"> Dell Laptop Charger 65W Watt USB Type C AC Power Adapter LA65NM190/HA65NM190/DA65NM190 Include... </a>
+                <div class="star linking"><img src="assects/rating items/5star.jpg" alt="">80</div>
+                <p class="itemp"><small class="itemdollar">$</small> <span class="itemspan">32.25 </span></p>
+
+                <span>List: <del>$39.99</del></span>
+                <small class="itemsmall">Get it as soon as Monday, Oct 3 <br> $27.73 shipping </small>
+            </div>
+            <div class="col">
+                <img src="assects/rating items/13.jpg" alt=""> <br>
+                <a href="#"> Dell 90W AC Adapter for Dell Latitude E6430 ATG, Dell Latitude E6430s, Dell Latitude E6440, Dell Latitude E6530, Dell... </a>
+                <div class="star linking"><img src="assects/rating items/5star.jpg" alt="">221</div>
+                <p class="itemp"><small class="itemdollar">$</small> <span class="itemspan">29.99 </span></p>
+                <small class="itemsmall">$28.06 shipping <br>Only 1 left in stock - order...</small>
+            </div>
+            <div class="col">
+                <img src="assects/rating items/4.jpg" alt=""> <br>
+                <a href="#"> Dell Laptop Charger 65W Watt USB Type C AC Power Adapter LA65NM190/HA65NM190/DA65NM190 Include... </a>
+                <div class="star linking"><img src="assects/rating items/5star.jpg" alt="">80</div>
+                <p class="itemp"><small class="itemdollar">$</small> <span class="itemspan">32.25 </span></p>
+
+                <span>List: <del>$39.99</del></span>
+                <small class="itemsmall">Get it as soon as Monday, Oct 3 <br> $27.73 shipping </small>
+            </div>
+            <div class="col">
+                <img src="assects/rating items/5.jpg" alt=""> <br>
+                <a href="#"> Dell 90W AC Adapter for Dell Latitude E6430 ATG, Dell Latitude E6430s, Dell Latitude E6440, Dell Latitude E6530, Dell... </a>
+                <div class="star linking"><img src="assects/rating items/5star.jpg" alt="">221</div>
+                <p class="itemp"><small class="itemdollar">$</small> <span class="itemspan">29.99 </span></p>
+                <small class="itemsmall">$28.06 shipping <br>Only 1 left in stock - order...</small>
+            </div>
+            <div class="col">
+                <img src="assects/rating items/10.jpg" alt=""> <br>
+                <a href="#"> Dell Laptop Charger 65W Watt USB Type C AC Power Adapter LA65NM190/HA65NM190/DA65NM190 Include... </a>
+                <div class="star linking"><img src="assects/rating items/4star.jpg" alt="">80</div>
+                <p class="itemp"><small class="itemdollar">$</small> <span class="itemspan">32.25 </span></p>
+
+                <span>List: <del>$39.99</del></span>
+                <small class="itemsmall">Get it as soon as Monday, Oct 3 <br> $27.73 shipping </small>
+            </div>
+            <div class="col">
+                <img src="assects/rating items/12.jpg" alt=""> <br>
+                <a href="#"> Dell 90W AC Adapter for Dell Latitude E6430 ATG, Dell Latitude E6430s, Dell Latitude E6440, Dell Latitude E6530, Dell... </a>
+                <div class="star linking"><img src="assects/rating items/5star.jpg" alt="">221</div>
+                <p class="itemp"><small class="itemdollar">$</small> <span class="itemspan">29.99 </span></p>
+                <small class="itemsmall">$28.06 shipping <br>Only 1 left in stock - order...</small>
+            </div>
+            <div class="col">
+                <img src="assects/rating items/8.jpg" alt=""> <br>
+                <a href="#"> Dell Laptop Charger 65W Watt USB Type C AC Power Adapter LA65NM190/HA65NM190/DA65NM190 Include... </a>
+                <div class="star linking"><img src="assects/rating items/5star.jpg" alt="">80</div>
+                <p class="itemp"><small class="itemdollar">$</small> <span class="itemspan">32.25 </span></p>
+
+                <span>List: <del>$39.99</del></span>
+                <small class="itemsmall">Get it as soon as Monday, Oct 3 <br> $27.73 shipping </small>
+            </div>            
+        </div>
+        <br> <hr>
+        <div class="lastcallsignin text-center">
+            <span>See personalized recommendations</span> <br>
+            <button class="btn btn-sm btn-warning">Sign in</button> <br>
+            <small>New customer? <a href="#" class="linking">Start here.</a></small>
+        </div>
+        <hr>  <br> 
+
+    </div>
+
+    <div class="container-fluid backtotop">
+        <h5 class="fs-6">Back to top</h5>       
+    </div>
+
+    <div class="container-fluid footer1 text-light ">
+        <div class="container-footer footer1_line_height py-4">
+            <div class="row"> 
+                <div class="col">
+                    <h6>Get to Know Us</h6>
+                    <a href="#">Careers</a> <br>
+                    <a href="#">Blog</a> <br>
+                    <a href="#">About Amazon</a><br>
+                    <a href="#">Investor Relations</a><br>
+                    <a href="#">Amazon Devices</a><br>
+                    <a href="#">Amazon Science</a><br>
+                </div>
+                <div class="col">
+                    <h6>Make Money with Us</h6>
+                    <a href="#">Sell products on Amazon</a> <br>
+                    <a href="#">Sell on Amazon Business</a> <br>
+                    <a href="#">Sell apps on Amazon</a><br>
+                    <a href="#">Become an Affiliate</a><br>
+                    <a href="#">Advertise Your Products</a><br>
+                    <a href="#">Self-Publish with Us</a><br>
+                    <a href="#">Host an Amazon Hub</a><br>
+                    <a href="#"><i class="fas fa-2xs fa-thin fa-chevron-right"></i> See More Make Money with Us</a><br>
+                </div>
+                <div class="col">
+                    <h6>Amazon Payment Products</h6> 
+                    <a href="#">Amazon Business Card</a> <br>
+                    <a href="#">Shop with Points</a> <br>
+                    <a href="#">Reload Your Balance</a><br>
+                    <a href="#">Amazon Currency Converter</a><br>
+                </div>
+                <div class="col"> 
+                    <h6>Let Us Help You</h6>
+                    <a href="#">Amazon and COVID-19</a> <br>
+                    <a href="#">Your Account</a> <br>
+                    <a href="#">Your Orders</a><br>
+                    <a href="#">Shipping Rates & Policies</a><br>
+                    <a href="#">Returns & Replacements</a><br>
+                    <a href="#">Manage Your Content and Devices</a><br>
+                    <a href="#">Amazon Assistant</a><br>
+                    <a href="#">Help</a><br>
+                </div>
+            </div>
+        </div>
+        
+        <hr>  <br>
+        <div class="footer2">
+            <img class="amazon" src="assects/amazon_PNG25.png" width="80px" alt="">
+            <span id="span1"> <i class="fas fa-thin fa-globe"></i> English <i class="fa-solid fa-caret-up"></i> <i class="fa-solid fa-caret-down"></i> </span> 
+            <span> $ USD - U.S. Dollar </span> 
+            <span id="span3"> <img src="assects/eng.png" width="20px" alt=""> United States </span>
+            
+        </div>
+        <br> <br>         
+    </div>
+
+    <div class="container-fluid footer3 text-light ">
+        <div class="footer3-box py-4">
+            <div class="row"> 
+                <div class="col col1s">                    
+                    <a href="#">
+                        <strong>Amazon Music</strong> <br>
+                        stream millions of songs</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Amazon Advertising</strong> <br>
+                       Find, attract, and engage customers</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Amazon Drive</strong> <br>
+                        Cloud storage from Amazon</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>6pm</strong> <br>
+                        Score deals on fashion brands </a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>AbeBooks</strong> <br>
+                        Books, art & collectibles </a> 
+                </div>
+                <div class="col">                    
+                    <a href="#"> 
+                        <strong>ACX</strong> <br>
+                        Audiobook Publishing Made Easy</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Alexa</strong> <br>
+                        Actionable Analytics for the Web </a> 
+                </div>
+            </div>
+            
+            <div class="row"> 
+                <div class="col col1s">                    
+                    <a href="#">
+                        <strong>Sell on Amazon</strong> <br>
+                        Start a Selling Account</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Amazon Business</strong> <br>                        
+                        Everything For
+                        Your Business</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>AmazonGlobal</strong> <br>
+                        Ship Orders Internationally</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Home Services</strong> <br> 
+                        Experienced Pros Happiness Guarantee</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Amazon Ignite</strong> <br>
+                        Sell your original Digital Educational Resources </a> 
+                </div>
+                <div class="col">                    
+                    <a href="#"> 
+                        <strong>Amazon Web Services </strong> <br>
+                        Scalable Cloud Computing Services </a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Audible</strong> <br> 
+                        Listen to Books & Original Audio Performances </a> 
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="col col1s">                    
+                    <a href="#">
+                        <strong>Amazon Music</strong> <br>
+                        stream millions of songs</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Amazon Advertising</strong> <br>
+                       Find, attract, and engage customers</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Amazon Drive</strong> <br>
+                        Cloud storage from Amazon</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>6pm</strong> <br>
+                        Score deals on fashion brands </a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>AbeBooks</strong> <br>
+                        Books, art & collectibles </a> 
+                </div>
+                <div class="col">                    
+                    <a href="#"> 
+                        <strong>ACX</strong> <br>
+                        Audiobook Publishing Made Easy</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Alexa</strong> <br>
+                        Actionable Analytics for the Web </a> 
+                </div>
+            </div>
+            
+            <div class="row"> 
+                <div class="col col1s">                    
+                    <a href="#">
+                        <strong>Sell on Amazon</strong> <br>
+                        Start a Selling Account</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Amazon Business</strong> <br>                        
+                        Everything For
+                        Your Business</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>AmazonGlobal</strong> <br>
+                        Ship Orders Internationally</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Home Services</strong> <br> 
+                        Experienced Pros Happiness Guarantee</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Amazon Ignite</strong> <br>
+                        Sell your original Digital Educational Resources </a> 
+                </div>
+                <div class="col">                    
+                    <a href="#"> 
+                        <strong>Amazon Web Services </strong> <br>
+                        Scalable Cloud Computing Services </a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Audible</strong> <br> 
+                        Listen to Books & Original Audio Performances </a> 
+                </div>
+            </div>
+
+            <div class="row"> 
+                <div class="col"></div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Amazon Music</strong> <br>
+                        stream millions of songs</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Amazon Music</strong> <br>
+                        stream millions of songs</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Amazon Music</strong> <br>
+                        stream millions of songs</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Amazon Music</strong> <br>
+                        stream millions of songs</a> 
+                </div>
+                <div class="col">                    
+                    <a href="#">
+                        <strong>Amazon Music</strong> <br>
+                        stream millions of songs</a> 
+                </div> 
+                <div class="col"></div>
+            </div>
+            <br> <br> 
+           
+            <footer>
+                <div class="footer text-center">
+                    <strong>
+                        <a href="#">Conditions of Use</a> 
+                        <a href="#">Privacy Notice</a> 
+                        <a href="#">Interest-Based Ads</a>  
+                    </strong><br> 
+                    &copy; 1996-2022, Amazon.com, Inc. or its affiliates
+                </div>
+            </footer>
+        </div>       
+        <br> 
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/482d697b34.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
